@@ -26,20 +26,38 @@ li.navBarBlock a:hover {
 	background-color: pink;
 }
 
+/* div containing logo */
+div.imageDiv {
+	background-color: pink;
+	border: 5px solid #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	min-width: auto;
+	min-height: auto;
+}
+
 /* logo */
 img.logo {
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* div containing punchline */
+div.punchlineDiv {
+	background-color: #FFFFFF;
 	margin-top: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 40%;
-}
-
-div.punchlineDiv {
-	margin-top: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 h1.punchline {
 	font-family: 'Thasadith', sans-serif;
+	color: pink;
+	padding: 100px, auto, 100px, auto;
 	text-align: center;
 }

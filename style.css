@@ -1,0 +1,36 @@
+img.logo {
+	display: block;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+ul.navBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFFFFF
+}
+
+/* the entire navbar */
+li.navBarBlock {
+	float: left;
+}
+
+/* the individual blocks of the navbar*/
+li.navBarBlock a {
+	font-family: 'Thasadith', sans-serif;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* changes block color on hover */
+li.navBarBlock a:hover {
+	background-color: pink;
+}
+

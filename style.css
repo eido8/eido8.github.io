@@ -1,3 +1,7 @@
+body.body {
+
+}
+
 ul.navBar {
 	list-style-type: none;
 	margin: 0;
@@ -11,14 +15,20 @@ li.navBarBlock {
 	float: left;
 }
 
+div.containsNavbar {
+	border-top: 5px solid #FFFFFF;
+	border-right: 5px solid #FFFFFF;
+	border-left: 5px solid #FFFFFF;
+}
+
 /* the individual blocks of the navbar*/
 li.navBarBlock a {
 	font-family: 'Thasadith', sans-serif;
+	text-decoration: none;
 	display: block;
 	color: black;
 	text-align: center;
 	padding: 14px 16px;
-	text-decoration: none;
 }
 
 /* changes block color on hover */
@@ -26,38 +36,45 @@ li.navBarBlock a:hover {
 	background-color: pink;
 }
 
-/* div containing logo */
-div.imageDiv {
-	background-color: pink;
-	border: 5px solid #FFFFFF;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	min-width: auto;
-	min-height: auto;
+/* div containing navbar, logo, and header */
+div.containsNavbarAndLogoAndHeader {
 }
 
+/* div containing logo and header */
+div.containsLogoAndHeader {
+	background-image: url("amp.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: auto;
+	min-height: auto;
+	border-bottom: 5px solid #FFFFFF;
+	border-left: 5px solid #FFFFFF;
+	border-right: 5px solid #FFFFFF;
+	padding-bottom: 100px;
+}
+
+div.containsLogo {
+	background-color: rgba(0,0,0,0.7);
+	padding-bottom: 50px;
+}
 /* logo */
 img.logo {
+	padding-top: 100px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* div containing punchline */
-div.punchlineDiv {
-	background-color: #FFFFFF;
-	margin-top: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+/* div containing header */
+div.containsHeader {
+	margin-top: 120px;
 }
 
-h1.punchline {
+h1.header {
 	font-family: 'Thasadith', sans-serif;
-	color: pink;
-	padding: 100px, auto, 100px, auto;
+	color: #FFFFFF;
 	text-align: center;
 }

@@ -1,11 +1,3 @@
-img.logo {
-	display: block;
-	margin-top: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-}
-
 ul.navBar {
 	list-style-type: none;
 	margin: 0;
@@ -34,3 +26,20 @@ li.navBarBlock a:hover {
 	background-color: pink;
 }
 
+/* logo */
+img.logo {
+	display: block;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+div.punchlineDiv {
+	margin-top: 100px;
+}
+
+h1.punchline {
+	font-family: 'Thasadith', sans-serif;
+	text-align: center;
+}

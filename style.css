@@ -1,3 +1,8 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 head {
 	height: 100%;
 }
@@ -18,7 +23,7 @@ div.everything {
 
 /* div for the entire navbar */
 div.topNavbarDiv {
-	background-color: #FFFFFF;
+	background-color: #5CDB95;
 	overflow: hidden;
 	position: fixed;
 	height: 50px;
@@ -54,13 +59,14 @@ li.topNavbarContentLeft a {
 	vertical-align: middle;
 	line-height: 50px;
 	color: inherit;
-	font-family: 'Thasadith', sans-serif;
+	font-family: 'Monoton', cursive;
 	font-size: 15px;
 }
 
 /* changes background color of each navbar content on hover */
 li.topNavbarContentLeft a:hover {
 	background-color: pink;
+	transition: background-color 0.18s linear;
 }
 
 
@@ -90,6 +96,7 @@ li.topNavbarContentRight a {
 
 li.topNavbarContentRight a:hover {
 	background-color: pink;
+	transition: background-color 0.18s linear;
 }
 
 
@@ -151,7 +158,7 @@ div.logoAndSampleDiv {
 }
 
 img.eidoLogo {
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 80px;
 	display: block;
 	margin-left: auto;
@@ -179,16 +186,77 @@ iframe.soundcloudSample {
 
 
 /*listen*/
-div.songsDiv {
-	background-color: black;
+div.listenDiv {
+	background-color: #5CDB95;
 	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 h1.listen {
+	text-align: center;
+	font-size: 50px;
+	text-decoration: underline;
+	color: #black;
+	font-family: 'Monoton', cursive;
+	opacity: 0;
+}
+
+div.row {
+  display: flex;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div.column {
+  flex: 33.33%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.column:hover {
+	box-shadow: 0px 15px #5CDB95;
+	transition: box-shadow 0.3s;
+}
+
+img.sampleImage {
+	width: 100%;
+}
+/* end of listen */
+
+
+
+
+/* collab */
+div.collabDiv {
+	background-color: #FFFFFF;
+}
+
+/* make the word collab opaque! */
+h1.collab {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 	font-size: 50px;
-	color: #FFFFFF;
-	font-family: 'Thasadith', sans-serif;
+	color: black;
+	font-family: 'Monoton', cursive;
+}
+
+p.collabInfo {
+	text-align: center;
+	font-size: 25px;
+}
+
+a.requestASong {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	text-align: center;
+	font-size: 25px;
 }

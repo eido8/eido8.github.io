@@ -1,5 +1,31 @@
-body.body {
-	background-color: black;
+head {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+}
+
+div.everything {
+	background-image: url("amp.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+/* div for the entire navbar */
+div.topNavbarDiv {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: fixed;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
 }
 
 
@@ -19,30 +45,150 @@ li.topNavbarContentLeft {
 	float: left;
 }
 
+/* each left navbar content */
 li.topNavbarContentLeft a {
 	display: block;
-	padding: 8px;
-	background-color: red;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	color: inherit;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 15px;
+}
+
+/* changes background color of each navbar content on hover */
+li.topNavbarContentLeft a:hover {
+	background-color: pink;
 }
 
 
 
 
-/* navbar contents on the right side of the navbar */
+/* navbar right side of the navbar */
 ul.topNavbarRight {
 	float: right;
 	list-style-type: none;
-	margin: 0;
+	margin: 0px 20px 0px 0px;
 	padding: 0;
 	overflow: hidden;
 }
 
 li.topNavbarContentRight {
+	/* li elements are default blocks so by inline, it removes the line breaks before and after */
 	float: right;
 }
 
+/* each right navbar content*/
 li.topNavbarContentRight a {
 	display: block;
-	padding: 8px;
-	background-color: red;
+	width: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li.topNavbarContentRight a:hover {
+	background-color: pink;
+}
+
+
+
+
+/* social media logos*/
+img.instagramLogo {
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.facebookLogo {
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.mailLogo {
+	height: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/* logo at the very left of the navbar */
+li.topNavbarContentLogo {
+	float: left;
+}
+
+li.topNavbarContentLogo a {
+	background-color: black;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+img.navbarLogo {
+	height: 30px;
+	display: block;
+}
+/* end of navbar */
+
+
+
+
+/* eido8 logo */
+div.logoAndSampleDiv {
+	background-color: rgba(0,0,0,0.5);
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+img.eidoLogo {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/* end of eido8 logo */
+
+
+
+
+/* soundcloud sample */
+iframe.soundcloudSample {
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 100px;
+	margin-top: 100px;
+}
+/* end of audio visualizer */
+
+
+
+
+/*listen*/
+div.songsDiv {
+	background-color: black;
+	overflow: hidden;
+}
+
+h1.listen {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 50px;
+	color: #FFFFFF;
+	font-family: 'Thasadith', sans-serif;
 }

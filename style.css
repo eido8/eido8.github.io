@@ -1,138 +1,151 @@
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-head {
-	height: 100%;
+/* Parallax effect */
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("amp.jpg");
+  min-height: 100%;
 }
 
-body {
-	height: 100%;
-	margin: 0px;
+.bgimg-2 {
+  background-image: url("vinyl.jpg");
+  min-height: 400px;
 }
 
-div.everything {
-	background-image: url("amp.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+.bgimg-3 {
+  background-image: url("http://www.w3schools.com/howto/img_parallax3.jpg");
+  min-height: 400px;
 }
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* div for the entire navbar */
-div.topNavbarDiv {
-	background-color: #5CDB95;
-	overflow: hidden;
+div.navbar {
+	background-color: #FFFFFF;
 	position: fixed;
 	height: 50px;
-	top: 0px;
-	left: 0px;
-	right: 0px;
 	width: 100%;
+  z-index: 100;
 }
 
-
-
-
 /* navbar contents on the left side of the navbar */
-ul.topNavbarLeft {
+ul.navbarLeft {
 	float: left;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
 
-li.topNavbarContentLeft {
-	/* li elements are default blocks so by inline, it removes the line breaks before and after */
+li.navbarText {
 	float: left;
 }
 
 /* each left navbar content */
-li.topNavbarContentLeft a {
+li.navbarText a {
 	display: block;
-	width: 100px;
+	width: 80px;
+  line-height: 50px;
 	text-decoration: none;
 	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
-	color: inherit;
-	font-family: 'Monoton', cursive;
-	font-size: 15px;
+  font-size: 20px;
+  font-family: 'Bangers', cursive;
+  color: black;
 }
 
 /* changes background color of each navbar content on hover */
-li.topNavbarContentLeft a:hover {
-	background-color: pink;
-	transition: background-color 0.18s linear;
+li.navbarText a:hover {
+	background-color: black;
+	transition: background-color 0.2s linear;
+  color: rgba(123, 239, 178, 0.8);
 }
 
-
-
-
 /* navbar right side of the navbar */
-ul.topNavbarRight {
+ul.navbarRight {
 	float: right;
 	list-style-type: none;
 	margin: 0px 20px 0px 0px;
 	padding: 0;
-	overflow: hidden;
 }
 
-li.topNavbarContentRight {
+li.navbarIcons {
 	/* li elements are default blocks so by inline, it removes the line breaks before and after */
 	float: right;
 }
 
+
+
+
 /* each right navbar content*/
-li.topNavbarContentRight a {
+li.navbarIcons a {
 	display: block;
-	width: 60px;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+	width: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-li.topNavbarContentRight a:hover {
-	background-color: pink;
+li.navbarIcons a:hover {
+	background-color: black;
 	transition: background-color 0.18s linear;
-}
-
-
-
-
-/* social media logos*/
-img.instagramLogo {
-	height: 30px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-img.facebookLogo {
-	height: 30px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-img.mailLogo {
-	height: 30px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  color: rgba(123, 239, 178, 0.8);
 }
 
 
 
 
 /* logo at the very left of the navbar */
-li.topNavbarContentLogo {
+li.navbarLogo {
 	float: left;
 }
 
-li.topNavbarContentLogo a {
+li.navbarLogo a {
 	background-color: black;
 	display: block;
 	padding-top: 10px;
@@ -150,113 +163,73 @@ img.navbarLogo {
 
 
 
-/* eido8 logo */
-div.logoAndSampleDiv {
-	background-color: rgba(0,0,0,0.5);
-	overflow: hidden;
-	padding-bottom: 100px;
+
+
+
+
+
+
+
+
+
+
+
+/* main logo */
+div.logo {
+  background-color: rgba(123, 239, 178, 0.8);
+  padding-top: 180px;
+  padding-bottom: 100px;
 }
 
 img.eidoLogo {
-	padding-top: 120px;
-	padding-bottom: 80px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-/* end of eido8 logo */
 
 
 
 
-/* soundcloud sample */
-iframe.soundcloudSample {
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	height: 100px;
-	margin-top: 100px;
-}
-/* end of audio visualizer */
 
 
 
 
-/*listen*/
+
+
+
+
 div.listenDiv {
-	background-color: #5CDB95;
-	overflow: hidden;
-	padding-top: 0px;
-	padding-bottom: 0px;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Bangers', cursive;
 }
 
 h1.listen {
-	text-align: center;
-	font-size: 50px;
-	text-decoration: underline;
-	color: #black;
-	font-family: 'Monoton', cursive;
-	opacity: 0;
+  color: rgba(123, 239, 178, 1);
+  text-decoration: underline;
 }
 
 div.row {
-  display: flex;
-	background-color: #FFFFFF;
-	overflow: hidden;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
 div.column {
-  flex: 33.33%;
-	margin-left: 10px;
-	margin-right: 10px;
+  display: inline-block;
+  width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 div.column:hover {
-	box-shadow: 0px 15px #5CDB95;
-	transition: box-shadow 0.3s;
-}
-
-img.sampleImage {
-	width: 100%;
-}
-/* end of listen */
-
-
-
-
-/* collab */
-div.collabDiv {
-	background-color: #FFFFFF;
-}
-
-/* make the word collab opaque! */
-h1.collab {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-	font-size: 50px;
-	color: black;
-	font-family: 'Monoton', cursive;
-}
-
-p.collabInfo {
-	text-align: center;
-	font-size: 25px;
-}
-
-a.requestASong {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	text-decoration: none;
-	color: inherit;
-	display: block;
-	text-align: center;
-	font-size: 25px;
+  box-shadow: 0 15px 5px -5px rgba(123, 239, 178, 1);
+  transition: 0.2s;
 }

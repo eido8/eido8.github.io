@@ -1,179 +1,98 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>eidoadeproduction</title>
-
-		<!-- google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
-		<!-- css link -->
-		<link rel="stylesheet" type="text/css" href="style.css"
-		<script src="myscripts.js"></script>
-	</head>
-
-
-
-
-	<body>
-
-		<div class="everything">
-		<!--top navbar-->
-		<div class="topNavbarDiv">
-
-
-
-
-			<!-- navbar contents on the left side of the navbar -->
-			<ul class="topNavbarLeft">
-				<li class="topNavbarContentLogo">
-					<a href = "index.html">
-						<img src="diskLogo.png" class="navbarLogo" alt="logo of a disk" />
-					</a>
-				</li>
-				<li class="topNavbarContentLeft"><a href="listen.html">Listen</a></li>
-			 	<li class="topNavbarContentLeft"><a href="samples.html">Samples</a></li>
-			  <li class="topNavbarContentLeft"><a href="contactMe.html">Contact</a></li>
-			</ul>
-
-
-
-
-			<!-- navbar contents on the right side of the navbar -->
-			<ul class="topNavbarRight">
-
-				<li class="topNavbarContentRight">
-					<a href = "mailto:eidoadeproduction@gmail.com">
-			      <img class = "mailLogo" src = "socialmedia/logo_mail.png" alt = "mail logo">
-			    </a>
-				</li>
-
-				<li class="topNavbarContentRight">
-					<a href = "https://www.facebook.com/jayem.kweon.98" target = "_blank">
-						<img class = "facebookLogo" src = "socialmedia/logo_facebook.png" alt = "facebook logo">
-					</a>
-				</li>
-
-				<li class="topNavbarContentRight">
-					<a href="https://www.instagram.com/eidoade/" target = "_blank">
-						<img src="socialmedia/logo_instagram.png" class="instagramLogo" alt = "instagram logo" />
-					</a>
-				</li>
-
-
-
-
-			</ul>
-		</div>
-		<!-- end of navbar -->
-
-
-
-
-		<!-- eido8 logo -->
-		<div class="logoAndSampleDiv">
-			<img src="logo.png" class="eidoLogo" alt="eidoade logo" />
-
-
-
-
-			<!-- soundcloud sample -->
-			<iframe class="soundcloudSample" scrolling="no"
-				frameborder="no" allow="autoplay"
-				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/587058522&color=%23ffc0cb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-		</div>
-
-		<!-- end of eido8 logo and sample -->
-
-
-
-		<!-- Three spotlight albums -->
-		<div class="listenDiv">
-			<h1 class="listen">Listen</h1>
-		</div>
-
-		<div class="row">
-
-  		<div class="column">
-    		<img src="sampleImage.jpg" class="sampleImage" alt="imageOne">
-  		</div>
-
-  		<div class="column">
-    		<img src="sampleImage.jpg" class="sampleImage" alt="imageTwo">
-  		</div>
-
-  		<div class="column">
-    		<img src="sampleImage.jpg" class="sampleImage" alt="imageThree">
-  		</div>
-
-		</div>
-
-
-
-
-		<div class="collabDiv">
-			<h1 class="collab">Collab</h1>
-			<p class="collabInfo">
-				collab with eido8 free of charge or simply request a song!
-			</p>
-			<a href="requestASong.html" class="requestASong">Request a song!</a>
-		</div>
-
-
-
-		<div class="bottomPageDiv">
-			<h1 class="bottomPage"></h1>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</body>
+  <head>
+<!-- A meta tag should define the character set to be UTF-8: -->
+    <meta charset="UTF-8">
+<!-- A viewport meta tag should make the web site work on all devices and screen resolutions: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Allows change of color of font awesome icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+<!-- navbar contents on the left side of the navbar -->
+      <ul class="navbarLeft">
+        <li class="navbarLogo"><a href="#"><img src="diskLogo.png" class="navbarLogo" alt="logo of a disk" /></a></li>
+        <li class="navbarText"><a href="#">Home</a></li>
+        <li class="navbarText"><a href="#">Listen</a></li>
+        <li class="navbarText"><a href="#">Samples</a></li>
+        <li class="navbarText"><a href="#">Video</a></li>
+        <li class="navbarText"><a href="#">Contact</a></li>
+      </ul>
+
+
+<!-- navbar icons on the right side of the navbar -->
+      <ul class="navbarRight">
+        <li class="navbarIcons"><a href="#" target="_blank"><i class="fab fa-apple fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="#" target="_blank"><i class="fab fa-soundcloud fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="#" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="#" target="_blank"><i class="fab fa-spotify fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="https://www.facebook.com/jayem.kweon.98" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="https://www.instagram.com/eidoade/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+        <li class="navbarIcons"><a href="mailto:eidoadeproduction@gmail.com"><i class="fas fa-envelope fa-lg"></i></a></li>
+      </ul>
+
+    </div>
+<!-- end of navbar -->
+
+<!-- main logo -->
+    <div class="bgimg-1">
+      <div class="logo">
+        <img src="logo.png" class="eidoLogo">
+      </div>
+    </div>
+
+<!-- listen -->
+    <div class="listenDiv">
+      <h1 class="listen">Listen</h1>
+    </div>
+
+    <div class="bgimg-2">
+<!-- albums -->
+      <div class="row">
+        <div class="column">
+          <img src="sampleImage.jpg" alt="first album" style="width:100%">
+        </div>
+
+        <div class="column">
+          <img src="sampleImage.jpg" alt="second album" style="width:100%">
+        </div>
+
+        <div class="column">
+          <img src="sampleImage.jpg" alt="second album" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+      </div>
+    </div>
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+      </div>
+    </div>
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">COOL!</span>
+      </div>
+    </div>
+  </body>
 </html>

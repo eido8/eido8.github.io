@@ -3,12 +3,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-
-
 /* Parallax effect */
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -58,14 +52,7 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
-
-
-
-
-
-
-
-
+/* end of parallax effect */
 
 /* navbar */
 .topnav {
@@ -101,6 +88,7 @@ h3 {
   display: none;
 }
 
+/* when screen size is tablet size */
 @media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -113,6 +101,7 @@ h3 {
   }
 }
 
+/* when screen size is phone size */
 @media screen and (max-width: 1000px) {
   .topnav.responsive {position: sticky;}
   .topnav.responsive .icon {
@@ -164,12 +153,14 @@ img.eidoLogo {
   width: 50%;
 }
 
+/* when screen size is tablet size */
 @media screen and (max-width: 1000px) {
   img.eidoLogo {
     width: 70%;
   }
 }
 
+/* when screen size is phone size */
 @media screen and (max-width: 600px) {
   img.eidoLogo {
     width: 90%;
@@ -192,29 +183,34 @@ div.watchDiv {
 
 img.watchImg {
   width: 40%;
+  height: auto;
 }
 
 div.videoDiv {
   background-color: black;
   text-align: center;
 }
+
+.video {
+  max-width: 100%;
+  height: auto;
+}
 /* end of watch */
 
 /* listen */
 div.listenDiv {
+  max-width: 100%;
+  max-height: 100%;
   background-color: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 35px;
   text-align: center;
-  font-family: 'Bangers', cursive;
 }
 
-h1.listen {
-  color: rgba(123, 239, 178, 1);
-  text-decoration: underline;
+img.listenImg {
+  width: 40%;
+  height: auto;
 }
 
+/* albums */
 div.row {
   padding-top: 50px;
   padding-left: 20px;

@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Parallax effect */
@@ -9,24 +11,25 @@ body {
   width: 100%;
   position: relative;
   background-attachment: fixed;
-  background-position: 0%, 0%, 50%, 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bgimg-1 {
-  background-image: url("amp.jpg");
+div.bgimg-1 {
+  background-color: black;
+  vertical-align: middle;
   max-width: 100%;
   min-height: 100%;
+  display: inline-block;
+  z-index: 4;
 }
 
-.bgimg-2 {
+div.bgimg-2 {
   background-image: url("bg2.png");
-  min-height: 400px;
+  z-index: 1;
 }
 
-.bgimg-3 {
-  background-image: url("http://www.w3schools.com/howto/img_parallax3.jpg");
-  min-height: 400px;
+div.bgimg-3 {
+  background-image: url("vinyl.jpg");
 }
 
 .caption {
@@ -45,17 +48,11 @@ body {
   font-size: 25px;
   letter-spacing: 10px;
 }
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
 /* end of parallax effect */
 
 /* navbar */
 .topnav {
+  /* animation: 2.5s ease-out 0s 1 slideInFromLeft; */
   overflow: hidden;
   background-color: #FFFFFF;
   position: sticky;
@@ -63,25 +60,74 @@ h3 {
   z-index: 100;
 }
 
+/*
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.navbarLeftText {
+  text-align: center;
+  width: 60px;
+  /* animation: 2s ease-out 0s 1 slideInFromLeft; */
+}
+
+hr.navLine {
+  height: .25rem;
+  /* width: 180px; */
+  width: 0px;
+  margin-left: 0px;
+  border: none;
+  background-color: black;
+  /* animation: 2s ease-out 0s 1 slideInFromLeft; */
+  transition: .5s ease;
+}
+
 .topnav a {
   float: left;
-  display: block;
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 19px;
   font-family: 'Bangers', cursive;
-}
-
-.topnav a:hover {
-  color: rgb(123, 239, 178);
-  background-color: black;
   transition: 0.18s linear;
 }
 
-.active {
-  background-color: black;
+.topnav a:not(.active):hover {
+  color: rgb(123, 239, 178);
+}
+
+.topnav a::before {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: black;]
+  position: absolute;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+  /* How would I make it so that the line goes
+  under the navbar text, not on the top? */
+}
+
+.topnav a:not(.active):hover::before {
+  width: 100%;
 }
 
 .topnav .icon {
@@ -94,10 +140,6 @@ h3 {
   .topnav a.icon {
     float: right;
     display: block;
-  }
-  div.watchDiv {
-    padding-top: 5%;
-    padding-bottom: 5%;
   }
 }
 
@@ -119,10 +161,15 @@ h3 {
   .topnav a.smicons {
     display: none;
   }
+
+  .topnav a::before {
+    display: none;
+  }
 }
 
 img.navbarLogo {
-  background-color: black;
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+
   height: 20px;
   display: block;
   padding-left: 10px;
@@ -130,27 +177,30 @@ img.navbarLogo {
 }
 
 a.smicons {
+  /* animation: 2s ease-out 0s 1 slideInFromRight; */
   padding-top: 16px;
-  width: 20px;
+  width: 28px;
   padding-bottom: 16px;
   font-size: 15px;
   float: right;
 }
-
 /* end of navbar */
 
 /* main logo */
 div.logo {
   background-color: #FFFFFF;
   padding-top: 1%;
-  padding-bottom: 5%;
+  padding-bottom: 12%;
+  top: 0;
+  /* position: sticky; */
 }
 
 img.eidoLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 100%;
+  width: 45%;
 }
 
 /* when screen size is tablet size */
@@ -161,52 +211,64 @@ img.eidoLogo {
 }
 
 /* when screen size is phone size */
-@media screen and (max-width: 600px) {
+@media screen and (max-width:   600px) {
   img.eidoLogo {
     width: 90%;
-  }
-
-  div.watchDiv img.watchImg {
-    width: 60%;
   }
 }
 /* end of main logo */
 
 /* watch */
-div.watchDiv {
-  margin-top: 5%;
-  max-width: 100%;
-  max-height: 100%;
-  background-color: black;
+div.bgimg-1 {
+  background-color: white;
   text-align: center;
+  /* border-top: 10px solid black */
+  height: 600px;
 }
 
-img.watchImg {
-  width: 40%;
+img.youtube {
+  width: 12%;
+}
+
+img.channelImg {
+  padding-top: 50px;
+  width: 30%;
   height: auto;
-}
-
-div.videoDiv {
-  background-color: black;
-  text-align: center;
+  float: left;
+  display: block;
+  background-color: white;
 }
 
 .video {
-  max-width: 100%;
-  height: auto;
+  /* background-color: black; */
+  float: right;
+  width: 60%;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 5%;
 }
+
+/*
+.bgimg-1 a:hover::before {
+  width: 100%;
+} */
+
+/* @media screen and (max-width: 1000px) {
+
+} */
+
 /* end of watch */
 
 /* listen */
 div.listenDiv {
   max-width: 100%;
   max-height: 100%;
-  background-color: black;
+  background-color: green;
   text-align: center;
 }
 
 img.listenImg {
-  width: 40%;
+  width: 30%;
   height: auto;
 }
 
@@ -219,6 +281,10 @@ div.row {
   text-align: center;
 }
 
+.row div::before {
+
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 div.column {
   display: inline-block;
@@ -226,10 +292,10 @@ div.column {
   height: auto;
   margin-left: 15px;
   margin-right: 15px;
+  transition: 0.2s;
 }
 
 div.column:hover {
-  box-shadow: 0 15px 5px -5px rgba(123, 239, 178, 1);
-  transition: 0.2s;
+  box-shadow: 0 15px 5px -5px black;
 }
 /* end of listen */

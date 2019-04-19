@@ -101,11 +101,16 @@ hr.navLine {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  margin: 14px 16px;
+  /* I added padding to match the padding from the logos */
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
   font-size: 19px;
   font-family: 'Bangers', cursive;
   transition: 0.18s linear;
+  /* This sets the relative context to 'topnav a' */
+  position: relative; 
 }
 
 .topnav a:not(.active):hover {
@@ -115,15 +120,13 @@ hr.navLine {
 .topnav a::before {
   content: '';
   display: block;
-  margin-top: 3px;
-  margin-bottom: 10px;
   height: 2px;
-  background-color: black;]
-  position: absolute;
-  width: 0%;
+  background-color: black;
   transition: all ease-in-out 250ms;
-  /* How would I make it so that the line goes
-  under the navbar text, not on the top? */
+  width: 0;
+  /* bottom 0 means that there is 0 space in between the bottom of the parent and this element (sticks it to the bottom) */
+  bottom: 0;
+  position: absolute;
 }
 
 .topnav a:not(.active):hover::before {

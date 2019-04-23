@@ -21,3 +21,9 @@ function myFunction() {
 //     });
 //   }
 // }
+
+$("#listenNav").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".bgimg-1").offset().top
+    }, 2000);
+});

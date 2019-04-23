@@ -15,12 +15,15 @@ body {
   background-size: cover;
 }
 div.bgimg-1 {
-  background-color: black;
   vertical-align: middle;
   max-width: 100%;
   min-height: 100%;
   display: inline-block;
   z-index: 4;
+  background-color: white;
+  text-align: center;
+  /* border-top: 10px solid black */
+  height: 600px;
 }
 
 div.bgimg-2 {
@@ -29,7 +32,7 @@ div.bgimg-2 {
 }
 
 div.bgimg-3 {
-  background-image: url("vinyl.jpg");
+
 }
 
 .caption {
@@ -101,11 +104,17 @@ hr.navLine {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
+  margin: 14px 16px;
+  /* I added padding to match the padding from the logos */
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
   font-size: 19px;
   font-family: 'Bangers', cursive;
   transition: 0.18s linear;
+  /* This sets the relative context to 'top nav a'  */
+  position: relative;
 }
 
 .topnav a:not(.active):hover {
@@ -115,13 +124,18 @@ hr.navLine {
 .topnav a::before {
   content: '';
   display: block;
-  margin-top: 3px;
-  margin-bottom: 10px;
+  /* margin-top: 3px;
+  margin-bottom: 10px; */
   height: 2px;
-  background-color: black;]
+  /* background-color: black;]
   position: absolute;
-  width: 0%;
+  width: 0%; */
+  background-color: black;
   transition: all ease-in-out 250ms;
+  width: 0;
+  /* bottom 0 means that there is 0 space in between the bottom of the parent and this element (sticks it to the bottom) */
+  bottom: 0;
+  position: absolute;
   /* How would I make it so that the line goes
   under the navbar text, not on the top? */
 }
@@ -150,7 +164,7 @@ hr.navLine {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: black;
+    /* background-color: black; */
     color: rgb(123, 239, 178);
   }
   .topnav.responsive a {
@@ -184,6 +198,7 @@ a.smicons {
   font-size: 15px;
   float: right;
 }
+
 /* end of navbar */
 
 /* main logo */
@@ -273,6 +288,11 @@ img.listenImg {
 }
 
 /* albums */
+
+div.samplePacks h1 {
+  font-family: 'Bangers', cursive;
+}
+
 div.row {
   padding-top: 50px;
   padding-left: 20px;
@@ -299,3 +319,17 @@ div.column:hover {
   box-shadow: 0 15px 5px -5px black;
 }
 /* end of listen */
+
+div.concludingDiv {
+  width: 100%;
+  vertical-align: middle;
+  max-width: 100%;
+  min-height: 100%;
+  display: inline-block;
+  z-index: 4;
+  background-color: white;
+  text-align: center;
+  /* border-top: 10px solid black */
+  height: 600px;
+  border: 1px red solid;
+}
